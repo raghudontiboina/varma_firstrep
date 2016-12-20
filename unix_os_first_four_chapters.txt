@@ -1,0 +1,390 @@
+CHAPTER -1 
+
+
+Introduction
+-------------
+
+what is unix ? how/why it is popular ? hisotry ?
+
+Most powerful ,Multiuser OS, invented at AT&T Bell labs in 1965
+
+tartgeted large comunity.
+
+started by Deni Riche , Kenthompson .
+
+started with pdp7 later ported to pdp 11 (512 kB)
+
+Kenthompson created lang -B ( highlevel ) rewrote entire unix code in B language for portabilty - but few limitations
+
+later Dennis rich worte C Lang - entire unix in c language.
+
+1970 and later it is commercialized.
+
+Hardware Requirements
+---------------------
+
+Prequisites : 
+
+minimum 80MB hdd , 4MB RAM , procesessor 80286
+
+Terminals :
+
+out of 80 MB , unix files ocupies 40 MB ,the rest is swap space.
+
+per terminal 1 MB minimum is required . more no of terminal required more memory.
+
+
+Salient features
+----------------
+
+1 . Multiuser capability 
+
+   Resource sharing , data sharing , shares same computer with different terminal
+
+2. Multi tasking
+   
+   simultaneously doing tasks by multi users and single user ( background jobs)
+   dumb terminal, teminal emulation , Back groud jobs, fore ground jobs.
+
+3. Comunication
+
+   
+4. security 
+
+user-level : assigning passwords
+
+file-level : permissions
+
+encryption/decription  : Unreadable format ( key )
+
+5. Portablity 
+
+ ported almost any computer 
+
+
+
+Unix system organization
+-------------------------
+
+1 Application 
+
+tools applications
+
+2 SHELL
+
+intracting with kernal executes program with kernal
+
+command line interpreter 
+
+sh 
+
+type of shells
+
+a. Bounrn shell (bourn) - $ 
+b. c shell ( bjoy) - command allias , hisoty - %
+c. corn shell - (david corn) 
+
+3 kernal
+
+core part of unix 
+
+stored in a file called unix .
+
+handles intrupts
+
+process management ,  memory management.
+
+
+4 Hardware
+
+
+-----------------------------
+
+
+Unix commands
+
+- all small letters - case sensitive 
+
+- option should always use  " - "
+
+- press delete key to cancell the entire command
+
+- ctrl+d to exit from the terminal / kill process 
+
+ cc to compile c 
+
+- grep (gobally search a regular expression and print it)
+
+- dd to convert lower to upper case 
+
+
+
+
+The Unix file system 
+
+--------------------------------------------------------------------
+
+
+Admin responsibilties
+
+- login , intial password
+
+- default shell, group
+
+- creation of groups 
+
+
+
+- It treats evrithing is as a file 
+
+ even directory also treated also a file
+
+- file system upside down tree
+
+- file system begins as root and its denoted as / 
+  
+  / it self will have on file unix along with the bin,lib,dev,usr,tmp and etc directories
+  
+ - bin contains executable, all unix commands
+
+ - lib contains library fuctions 
+
+ - dev - device related files like ,disk drive , printer 
+
+ - usr - contains user related files like home 
+ - usr/bin also will have bin files
+
+ - tmp - temp files created by unix / users , the files will be remove once the server / machine rebooted
+
+
+Sailent features of unxi file system 
+-------------------------------------
+
+     - It has hierachical infrastructure
+     - files can grow dynamically
+     - files has access permissions
+     - all devices are implemented as files
+     
+
+creating files
+--------------
+
+touch     <file_name>       - to create empty files
+
+cat > <filename> - write into file
+
+ctrl+d           - end of file and saves the file
+
+copy files : 
+------------
+
+cp 
+
+Delete :
+--------
+rm
+
+
+rename :
+---------
+
+mv
+
+list :
+------
+
+ls r?
+
+ls -l ( lists no of disk blocks , by default one block ocupies 1024/512  )
+
+m- shared memory files
+c -char special files /dev
+coulums  
+
+1 .owner - group - others 
+2. links
+3 name of owner 
+4 name of group
+5 file creation / modified time 
+
+links
+---------
+
+soft link
+
+- if a file is very imp , you can establish more that one link same file
+  the file safe if one link is removed
+  avoids duplication of same content
+
+- 
+
+
+
+
+file permissions
+-----------------
+
+chomd options
+
++ - =
+
+mask 
+----------
+
+umask - the default permissions depends on umask value
+
+dir sticky bit - can not remove dir even if you give the write permissions
+
+file sticky bit - it will stick around memorey . for fast access .
+
+
+with out using umask 
+
+mkdir -m 
+
+
+bc ( basic clculator)
+---------------------
+
+
+expr 
+------------
+
+
+
+
+logname , uname , tty 
+---------------------
+
+
+
+
+
+
+Unix File system
+-----------------
+
+
+file system : files together with information about files
+
+a hard disk can split into different file systems , file system 
+
+cmchk - to know the block size of the file system 
+
+minimum file size - 1 block ( by default 512/1024  bytes)
+
+disk access are time consuming ( have to read many blocks)
+
+
+bolcks can be divided into 4 parts 
+-----------------------------------
+
+1. boot blcok
+
+   while booting the bootstrap loader will execute 
+
+2. super blcok
+
+   state of the file system ( how many files it can be accomadate)
+
+3. inode table ( ls -i)
+
+   information about the file . each
+   
+   owner of the file 
+   group which the owner is belonging
+   file type
+   access permission of the file
+   size of the file 
+   date and time of modification
+   date and time of access
+   no of links to the file  
+   addresses of the blocks where it is physically present
+
+4. data block
+
+   Thes contains the actual file content
+
+
+sync is the command that sync the data of inode table and super blcok from RAM to had disk 
+
+
+Storage 
+---------- 
+
+
+
+disk related commands
+---------------------
+df , du 
+
+ulimit ( can restrict the file zie)
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

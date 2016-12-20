@@ -1,0 +1,11 @@
+run --> ssh-keygen
+
+--> go to home directory
+
+-->cd .ssh
+
+-->id_rsa.pub
+
+-->copy the public key and update in the github (settings--> personal settings--> SSH and GPG keys
+
+

@@ -17,6 +17,6 @@
 <target name="compile" depends="clean" description="compile whole project">
     <echo>compile ${ant.project.name} </echo>
     <copy file="${src}/splashscreen.jpeg" tofile="${build}/splashscreen.jpeg"/>
-    <javac srcdir="${src}" destdir="${build}" includes="Test.java"/>
+    <javac  srcdir="${src}" destdir="${build}" includes="Test.java"/>
   </target>
 </project>

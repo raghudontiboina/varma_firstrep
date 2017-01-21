@@ -4,8 +4,12 @@ run --> ssh-keygen
 
 -->cd .ssh
 
+<<<<<<< HEAD
 
 -->id_rsa.pub.sh
+=======
+-->id_rsa.pub
+>>>>>>> parent of f70e339... fourth no line changed
 
 -->id_rsa.pub.ab
 

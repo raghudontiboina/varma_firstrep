@@ -1,0 +1,7 @@
+hi
+hello
+<<<<<<< HEAD
+this is source file 
+=======
+this is source in master
+>>>>>>> master

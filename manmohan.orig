@@ -1,0 +1,10 @@
+hi
+<<<<<<< HEAD
+this is monday branch file
+hello
+
+=======
+this is master branch file
+hello
+bye
+>>>>>>> master

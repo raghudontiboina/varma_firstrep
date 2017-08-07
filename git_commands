@@ -1,0 +1,9 @@
+git add filename
+git commit -m "message" filename
+git  pull
+git push
+git pull=git fetch+git merge
+git branch branchname
+git checkout branchname
+git merge branchname
+git log --oneline

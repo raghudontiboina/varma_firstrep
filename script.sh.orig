@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+pwd
+echo `date`
+ls
+ 
+=======
+ls
+pwd
+>>>>>>> master
+

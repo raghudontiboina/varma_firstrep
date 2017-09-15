@@ -1,5 +1,3 @@
-pwd
-echo `date`
 ls
  
 
